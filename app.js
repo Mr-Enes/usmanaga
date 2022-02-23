@@ -1,0 +1,16 @@
+const { Client, Intents } = require('discord.js');
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_MESSAGES] });
+
+client.on('ready', () => {
+  console.log(`${client.user.tag} Çevirimiçi !`);
+  client.user.setStatus('idle');
+  client.user.setActivity("u!yardım", { type: "PLAYING" });
+});
+
+client.on('messageCreate', message => {
+  if(message.content.toLowerCase() === "sa") {
+    message.channel.send(`${message.author} Aleykümselam Hoşgeldin !`);
+  };
+});
+
+client.login('OTQ2MDIzMTQ2ODU3ODI4MzUy.YhYqtg.kIjXKatPspmp9uMXNKlOHODC5xk');
