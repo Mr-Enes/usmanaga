@@ -3,8 +3,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 
 client.on('ready', () => {
   console.log(`${client.user.tag} Çevirimiçi !`);
-  client.user.setStatus('idle');
-  client.user.setActivity("u!yardım", { type: "PLAYING" });
+  client.user.setStatus('online');
 });
 
 client.on('messageCreate', message => {
