@@ -12,4 +12,17 @@ client.on('messageCreate', message => {
   };
 });
 
+client.on('messageCreate', message => {
+  if(message.content.toLowerCase() === '!yardım') {
+
+    let yardım = Discord.MessageEmbed()
+    .setTitle('Yardım Menüsü')
+    .setColor('#ffffff')
+    .setDescription('Merhaba!')
+    .setTimestamp()
+
+    message.channel.send({embeds: [yardım]});
+  };
+});
+
 client.login('OTQ2MDIzMTQ2ODU3ODI4MzUy.YhYqtg.kIjXKatPspmp9uMXNKlOHODC5xk');
