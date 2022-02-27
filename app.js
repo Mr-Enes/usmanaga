@@ -13,9 +13,9 @@ client.on('messageCreate', message => {
 });
 
 client.on('messageCreate', message => {
-  if(message.content.toLowerCase() === 'yardım') {
+  if(message.content === 'yardım') {
 
-    var embedMessage = new MessageEmbed()
+    const embedMessage = new MessageEmbed()
     .setTitle('Yardım Menüsü')
     .setColor('#ffffff')
     .setDescription('Selamke')
