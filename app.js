@@ -12,16 +12,4 @@ client.on('messageCreate', message => {
   };
 });
 
-client.on('messageCreate', message => {
-  if(message.content === 'yardım') {
-
-    const embedMessage = new MessageEmbed()
-    .setTitle('Yardım Menüsü')
-    .setColor('#ffffff')
-    .setDescription('Selamke')
-    
-    message.channel.send({ embeds: [embedMessage] });
-  };
-});
-
 client.login('OTQ2MDIzMTQ2ODU3ODI4MzUy.YhYqtg.kIjXKatPspmp9uMXNKlOHODC5xk');
