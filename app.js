@@ -15,7 +15,7 @@ client.on('messageCreate', message => {
 client.on('messageCreate', message => {
   if(message.content.toLowerCase() === '!yardım') {
 
-    let yardım = Discord.MessageEmbed()
+    let yardım = new Discord.MessageEmbed()
     .setTitle('Yardım Menüsü')
     .setColor('#ffffff')
     .setDescription('Merhaba!')
