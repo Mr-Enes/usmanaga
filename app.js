@@ -15,13 +15,13 @@ client.on('messageCreate', message => {
 client.on('messageCreate', message => {
   if(message.content.toLowerCase() === '!yardım') {
 
-    let yardım = new Discord.MessageEmbed()
+    const yardım = new MessageEmbed()
     .setTitle('Yardım Menüsü')
     .setColor('#ffffff')
     .setDescription('Merhaba!')
     .setTimestamp()
 
-    message.channel.send({embeds: [yardım]});
+    message.channel.send({ embeds: [yardım] });
   };
 });
 
