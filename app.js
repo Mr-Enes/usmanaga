@@ -13,15 +13,14 @@ client.on('messageCreate', message => {
 });
 
 client.on('messageCreate', message => {
-  if(message.content.toLowerCase() === '!yardım') {
+  if(message.content.toLowerCase() === 'yardım') {
 
-    const yardım = new MessageEmbed()
+    var embedMessage = new MessageEmbed()
     .setTitle('Yardım Menüsü')
     .setColor('#ffffff')
-    .setDescription('Merhaba!')
-    .setTimestamp()
-
-    message.channel.send({ embeds: [yardım] });
+    .setDescription('Selamke')
+    
+    message.channel.send({ embeds: [embedMessage] });
   };
 });
 
