@@ -22,5 +22,16 @@ client.on('messageCreate', message => {
   };
 });
 
+//PİNG KOMUTU
+client.on('messagecreate', message => {
+  if(message.content === "!yardım") {
+    const ping = new Discord.MessageEmbed()
+    .setTitle("Ping")
+    .setDescription("Gecikme Sürem: (client.ws.ping)ms")
+    .setColor("#FF0000")
+    message.cahnnel.send({embeds : [ping]});
+  };
+});
+
 //Bot Giriş
 client.login('OTQ2MDIzMTQ2ODU3ODI4MzUy.YhYqtg.kIjXKatPspmp9uMXNKlOHODC5xk');
