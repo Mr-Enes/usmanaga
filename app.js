@@ -17,7 +17,7 @@ client.on('messageCreate', message => {
 
 //KOMİK KOMUTLAR #1
 client.on('messageCreate', message => {
-  if(message.content.toLowerCase() === "UsMaNıMM") {
+  if(message.content.toLowerCase() === "usmanım") {
     message.channel.send(`${message.author} bRe SuSaK Sen Ne DeRSıN ?!`);
   };
 });
