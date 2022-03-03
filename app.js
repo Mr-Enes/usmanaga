@@ -4,8 +4,8 @@ const client = new Client({ intents: 32767 });
 //Ready.js
 client.on('ready', () => {
   console.log(`${client.user.tag} Çevirimiçi !`);
-  client.user.setStatus('dnd');
   client.user.setActivity(`Safiyeyi`, {type: "WATCHING"});
+  client.user.setStatus("idle");
 });
 
 //SA-AS KOMUTU
