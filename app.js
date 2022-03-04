@@ -29,7 +29,7 @@ client.on('messagecreate', message => {
     .setTitle("Ping")
     .setDescription("Gecikme Sürem: (client.ws.ping)ms")
     .setColor("#FF0000")
-    channel.send({embeds : [ping]});
+    channel.send({ embeds : [ping] });
   };
 });
 
