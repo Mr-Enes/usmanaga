@@ -23,15 +23,15 @@ client.on('messageCreate', message => {
 });
 
 //PİNG KOMUTU
-client.on('messagecreate', message => {
-  if(message.content === "!ping") {
+client.on('messagecreate', (message) => {
+  if(message.content === "ping") {
 
-    var ping = new MessageEmbed()
+    const ping = Discord.MessageEmbed()
     .setTitle("Ping")
     .setDescription("Gecikme Sürem: (client.ws.ping)ms")
     .setColor("#FF0000")
 
-    channel.send({ embeds : [ping] });
+    return.message.channel.send({ embeds : [ping] });
   };
 });
 
