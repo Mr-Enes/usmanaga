@@ -24,12 +24,12 @@ client.on('messageCreate', message => {
 
 //PİNG KOMUTU
 client.on('messagecreate', message => {
-  if(message.content === "!yardım") {
-    const ping = new Discord.MessageEmbed()
+  if(message.content === "yardım") {
+    const ping = new MessageEmbed()
     .setTitle("Ping")
     .setDescription("Gecikme Sürem: (client.ws.ping)ms")
     .setColor("#FF0000")
-    message.cahnnel.send({embeds : [ping]});
+    channel.send({embeds : [ping]});
   };
 });
 
