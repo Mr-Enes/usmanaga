@@ -9,8 +9,8 @@ var prefix = config.prefix
 //Ready.js
 client.on('ready', () => {
   console.log(`${client.user.tag} Çevirimiçi !`);
-  client.user.setStatus('idle');
-  client.user.setActivity('r!yardım');
+  client.user.setStatus('dnd');
+  client.user.setActivity('Safiyeyle');
 });
 
 //Sa-As Komutu
