@@ -22,17 +22,18 @@ client.on('messageCreate', message => {
   };
 });
 
-//PİNG KOMUTU
-client.on('messagecreate', message => {
-  if(message.content === "ping") {
+//Yardım Komutu
+client.on('messageCreate', async message => {
+  if(message.content.toLowerCase() === 'yardım') {
 
-    const ping = new Discord.MessageEmbed()
-    .setTitle("Ping")
-    .setDescription("Gecikme Sürem: (client.ws.ping)ms")
-    .setColor(ff00000)
+    const yardım = new Discord.MessageEmbed()
+    .setTitle("Yardım Menüsü")
+    .setColot(ff0000)
+    .setDescription("Yardım Menüsü Çalişür")
+    .addTimestamp()
 
-    message.channel.send({ embeds : [ping] });
-  };
+    message.channel.send({ embeds: [yardım] });
+};
 });
 
 //Bot Giriş
