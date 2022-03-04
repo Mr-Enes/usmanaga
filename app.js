@@ -1,5 +1,5 @@
 const { Client, Intents } = require('discord.js');
-const client = new Client({ intents: 32767 });
+const client = new Client({ intents: 98303 });
 
 //Ready.js
 client.on('ready', () => {
@@ -24,11 +24,13 @@ client.on('messageCreate', message => {
 
 //PİNG KOMUTU
 client.on('messagecreate', message => {
-  if(message.content === "yardım") {
-    const ping = new MessageEmbed()
+  if(message.content === "!ping") {
+
+    var ping = new MessageEmbed()
     .setTitle("Ping")
     .setDescription("Gecikme Sürem: (client.ws.ping)ms")
     .setColor("#FF0000")
+
     channel.send({ embeds : [ping] });
   };
 });
