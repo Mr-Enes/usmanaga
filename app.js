@@ -5,7 +5,6 @@ const config = require('./config.json');
 //Prefix Ayarlama
 var prefix = config.prefix
 
-
 //Ready.js
 client.on('ready', () => {
   console.log(`${client.user.tag} Çevirimiçi !`);
@@ -16,22 +15,14 @@ client.on('ready', () => {
 //Sa-As Komutu
 client.on('messageCreate', message => {
   if(message.content.toLowerCase() === 'sa') {
-    message.channel.send(`${message.author} Aleykümselam Hoşgeldin !`)
+    message.channel.send(`${message.author} Aleykümselam Hojgeldın KıZaNıM :)`);
   };
 });
 
-//Yardım Menüsü
+//Usman Aga #1
 client.on('messageCreate', message => {
-  
-    var yardım = new MessageEmbed()
-    .setTitle("Yardım Menüsü")
-    .setColor("#ff0000")
-    .setDescription("Yardım Menüsü Çalışıyor :) ")
-    .setThumbnail(`${message.author.avatarURL()}`)
-    .setTimestamp()
-
-if(message.content === prefix + 'yardım') {
-    message.channel.send({ embeds: [yardım] })
+  if(message.content.toLowerCase() === 'usmanımm') {
+    message.channel.send(`${message.author} Ne DeRSıN SeN Bre SuSak !`);
   };
 });
 
