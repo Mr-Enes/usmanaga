@@ -26,7 +26,8 @@ client.on('messageCreate', message => {
     var yardım = new MessageEmbed()
     .setTitle("Yardım Menüsü")
     .setColor("#ff0000")
-    .setDescription("Yardım Menüsü Çalışıyor")
+    .setDescription("Yardım Menüsü Çalışıyor :) ")
+    .setThumbnail(`${message.author.avatarURL()}`)
     .setTimestamp()
 
 if(message.content === prefix + 'yardım') {
